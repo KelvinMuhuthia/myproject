@@ -54,7 +54,6 @@ import com.example.myproject.Navigation.ROUT_KIDS
 import com.example.myproject.Navigation.ROUT_MEN
 import com.example.myproject.Navigation.ROUT_WOMEN
 import com.example.myproject.R
-import androidx.compose.ui.text.style.TextAlign
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -123,6 +122,7 @@ fun MenuScreen(navController: NavController){
             content = @Composable {
                 Column(
                     modifier = Modifier
+                        .fillMaxSize()
                         .verticalScroll(rememberScrollState())
                 ) {
                     Box(
@@ -133,7 +133,7 @@ fun MenuScreen(navController: NavController){
                     ) {
 
                         Image(
-                            painter = painterResource(id = R.drawable.property),
+                            painter = painterResource(id = R.drawable.header),
                             contentDescription = "",
                             modifier = Modifier
                                 .fillMaxSize()
@@ -161,7 +161,7 @@ fun MenuScreen(navController: NavController){
                                 contentAlignment = Alignment.Center
                             ){
                                 Image(
-                                    painter = painterResource(id = R.drawable.property),
+                                    painter = painterResource(id = R.drawable.menstuff),
                                     contentDescription = "",
                                     modifier = Modifier
                                         .fillMaxSize(),
@@ -203,7 +203,7 @@ fun MenuScreen(navController: NavController){
                                 contentAlignment = Alignment.Center
                             ){
                                 Image(
-                                    painter = painterResource(id = R.drawable.property),
+                                    painter = painterResource(id = R.drawable.ladiesstuff),
                                     contentDescription = "",
                                     modifier = Modifier
                                         .fillMaxSize(),
@@ -252,7 +252,7 @@ fun MenuScreen(navController: NavController){
                                 contentAlignment = Alignment.Center
                             ){
                                 Image(
-                                    painter = painterResource(id = R.drawable.property),
+                                    painter = painterResource(id = R.drawable.babies),
                                     contentDescription = "",
                                     modifier = Modifier
                                         .fillMaxSize(),
@@ -289,7 +289,7 @@ fun MenuScreen(navController: NavController){
                                 contentAlignment = Alignment.Center
                             ){
                                 Image(
-                                    painter = painterResource(id = R.drawable.property),
+                                    painter = painterResource(id = R.drawable.kids),
                                     contentDescription = "",
                                     modifier = Modifier
                                         .fillMaxSize(),
